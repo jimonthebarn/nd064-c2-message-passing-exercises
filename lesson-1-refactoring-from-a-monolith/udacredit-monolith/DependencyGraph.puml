@@ -1,0 +1,11 @@
+@startuml
+
+[FrontendClient] <|-- [CustomersRoute]
+[FrontendClient] <|-- [EmployeeRoute]
+
+[CustomersRoute] <|-- [CustomersService]
+[EmployeeRoute] <|-- [EmployeeService]
+
+[NotificationsRoute] <|-- [NotificationService]
+[NotificationsRoute] <|-- [EmployeeService]
+@enduml
